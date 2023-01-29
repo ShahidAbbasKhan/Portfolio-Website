@@ -101,7 +101,7 @@ header nav li a {
 
 .posts-section {
     background-color:#3b4948;
-    padding:32px 0;
+    padding:50px 0;
 }
 .posts-section-inner{
     max-width: 960px;
@@ -111,6 +111,7 @@ header nav li a {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .posts-section-inner .posts-header h3{
     font-style:normal;
@@ -160,3 +161,129 @@ header nav li a {
     font-size: 18px;
     line-height: 26px;
 }
+
+/* Featured Section*/
+.feature-section{
+    background-color: #f8f7ff;
+    padding:32px 0;
+}
+.featured-section-inner{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.featured-section-inner .fs-header h3{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    color: #110909;
+    margin-bottom: 10px;
+}
+
+.fs-items{
+    display:flex;
+    gap:18px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+}
+.fs-items .fs-items-left img{
+    border-radius:7px;
+    border-image: 1px;
+    height: 150px;
+    width: 180px;
+}
+.fs-items h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #21243D;
+    margin-bottom: 8px;
+}
+.fs-items-right .items-meta{
+    display: flex;
+    gap:25px;
+    
+}
+.fs-items-right .items-meta .badge{
+    background: #142850;
+    border-radius: 15px;
+    color:#fff;
+    padding:1px 8px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.fs-items-right .items-meta .category{
+    color: #718292;
+}
+.fs-items-right .description{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+/*Responsive*/
+@media all and (max-width: 600px) {
+    .hero-section .hero-inner {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-section .col-right {
+      margin-bottom: 30px;
+    }
+    .hero-section .col-left {
+      text-align: center;
+      margin: 0 20px;
+    }
+    .hero-section .col-left .action-button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .posts {
+      flex-direction: column;
+      margin: 0 10px;
+    }
+  
+    .posts-section .posts-header {
+      justify-content: center;
+    }
+  
+    .posts-header a {
+      display: none;
+    }
+  
+    .featured-section .featured-section-inner {
+      margin: 0 18px;;
+    }
+  
+    .featured-section .fs-header h2 {
+      text-align: center;
+    }
+  
+    .fs-list .fs-item {
+      flex-direction: column;
+    }
+  
+    .fs-list .fs-item .fs-item-left img {
+      width: 100%;
+    }
+  
+    .menu-button {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .menu-button:hover {
+      opacity: 0.7;
+    }
+  
+    .deskop-links {
+      display: none;
+    }
+  
+    header nav {
+      padding-right: 18px;
+    }
+    
+  }
