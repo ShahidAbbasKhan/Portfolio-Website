@@ -1,6 +1,6 @@
-h3 {
-    color:blue
-}
-p{
-    color:blueviolet
+html,body{
+    font-family: 'Heebo', sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #E5E5E5;
 }
